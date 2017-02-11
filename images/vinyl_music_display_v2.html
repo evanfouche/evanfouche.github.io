@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Vinyl Display</title>
+	<link rel="stylesheet" href="css/display.css">
+</head>
+<header>
+	<button class="hamburger">&#9776;</button>
+	<button class="cross">&#x2715;</button>
+</header>
+<!-- <div class="menu"></div> -->
+<body >
+<div class="menu">
+	<!-- <p>Select the number of color swatches to be displayed</p> -->
+	<!-- <div class="selector_div">
+	Select the number of swatches to be displayed: <select id="sel" onchange="select_sw_display()">
+		<textarea name="direction" rows="2" cols="30">Select the number of color swatches to be displayed</textarea> 
+		Select the number of swatches to be displayed:
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="5">5</option>
+		<option value="10">10</option>
+		<option value="15">15</option>
+		<option value="20">20</option>
+		<option value="30">30</option>
+
+	</select>
+	</div>  -->
+
+	<!-- <nav> -->
+	<!-- <div class="selector_" id="sel" onchange="select_sw_display()"> -->
+		<!-- Swatches displayed: -->
+		<!-- <div class="selection_" id="arr_sel">&#8250; -->
+			<!-- <div class="selection_" id="container"> -->
+				<!-- <div class="selection" value="1">1</div> -->
+				<!-- <div class="selection" value="2">2</div> -->
+				<!-- <div class="selection" value="5">5</div> -->
+				<!-- <div class="selection" value="10">10</div> -->
+				<!-- <div class="selection" value="15">15</div> -->
+				<!-- <div class="selection" value="20">20</div> -->
+				<!-- <div class="selection" value="30">30</div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+		<!-- </ul> -->
+	<!-- </div> -->
+
+	<!-- <div class="selector_"></div> -->
+	<div class="selection_" id="arr_sel"> Swatches displayed:
+		<div class="selected" id="current_swatch_num">1</div>
+		<!-- <div class="selecton_" id="arr">&#8250;</div> -->
+		<div class="selection_" id="container">
+			<div class="selection" data-myValue="1">1</div>
+			<div class="selection" data-myValue="2">2</div>
+			<div class="selection" data-myValue="5">5</div>
+			<div class="selection" data-myValue="10">10</div>
+			<div class="selection" data-myValue="15">15</div>
+			<div class="selection" data-myValue="20">20</div>
+			<div class="selection" data-myValue="30">30</div>
+		</div>
+		<div class="selecton_" id="arr">&#8250;</div>
+	</div>
+		
+
+	<!-- </nav> -->
+
+	<!-- <div id="selector2" >Swatches Displayed: </div>
+	<div id="sw_nums">
+		<div class="panel_item">hello</div>
+	</div> -->
+
+	<!-- THIS DIV CLASS IS FOR MENU DISPLAY -->
+	<div class="drop_display" id="horizontal_edge"></div>
+	<div class="drop_display" id="cover_display10">
+	<!-- <div id="description"></div> -->
+	</div>
+	<!-- <div id="wrapper"> -->
+	<div class="drop_display" id="description"></div>
+	<!-- </div> -->
+</div>
+<!-- umcomment code for different displays -->
+<!-- <div class="shelves" id="DomImage2">
+</div>
+<div class="assoc_display" id="cover_display2">
+</div> -->
+<!-- <div class="shelves" id="DomImage5">
+</div>
+<div class="assoc_display" id="cover_display5">
+</div> -->
+<div class="shelves" id="DomImage1"></div>
+<div class="shelves" id="DomImage2"></div>
+<div class="shelves" id="DomImage5"></div>
+<div class="shelves" id="DomImage10"></div>
+<div class="shelves" id="DomImage15">
+</div>
+<div class="shelves" id="DomImage20"></div>
+<div class="shelves" id="DomImage30"></div>
+<!-- THIS DIV CLASS IS FOR BOTTOM DISPLAY -->
+<div class="assoc_display" id="cover_display10_2">
+	<!-- <div id="description"></div> -->
+	<!-- <div class="assoc_display" id="description_2"></div> -->
+</div>
+<div class="assoc_display" id="description_2"></div>
+<!-- <div class="shelves" id="DomImage20">
+	
+</div>
+<div class="assoc_display" id="cover_display20">
+	
+</div> -->
+<!-- <div class="shelves" id="DomImage30">
+	
+</div>
+<div class="assoc_display" id="cover_display30">
+	
+</div> -->
+<!-- <div class="shelves" id="SquishImage">
+	
+</div>
+<div class="assoc_display" id="cover_display_squish">
+	
+</div> -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="js/dominant_json.js"></script>
+
+<!-- <script src="js/dominant_json_sw2.js"></script>
+<script src="js/dominant_json_sw5.js"></script>
+<script src="js/dominant_json_sw10.js"></script>
+<script src="js/dominant_json_sw20.js"></script>
+<script src="js/dominant_json_sw30.js"></script>
+<script src="js/squished_json.js"></script> -->
+<script src="js/display_v2.js"></script>
+</html>
