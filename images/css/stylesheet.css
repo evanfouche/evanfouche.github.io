@@ -38,6 +38,20 @@
 	/*border-bottom: 1px solid;
 	border-bottom-color: #CFCFCF;*/
 }
+.tumblr, .rgb3{
+	padding-left: 2px;
+	padding-top: 150px;
+	position: fixed;
+	font-size: 20px;
+	z-index: 0;
+}
+.hacker, .rgb4{
+	padding-left: 2px;
+	padding-top: 200px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -1;
+}
 .res_description{
 	padding-left: 220px;
 	padding-top: 50px;
@@ -67,17 +81,21 @@
 	z-index: -101;
 	opacity: 0.0;
 }
-.tumblr, .rgb3{
-	padding-left: 2px;
-	padding-top: 150px;
+.hacker_description{
+	/*padding-left: 110px;*/
+	padding-left: 220px;
+	padding-top: 200px;
 	position: fixed;
 	font-size: 20px;
+	font-style: italic;
+	z-index: -102;
+	opacity: 0.0;
 }
-#res, #music, #blog{
+#res, #music, #blog, #hack{
 	color: black;
 	cursor: pointer;
 	text-decoration: none;
-	z-index: -1;
+	z-index: -2;
 	/*border-bottom: 1px solid;
 	border-bottom-color: #CFCFCF;*/
 }
@@ -110,13 +128,13 @@
 	/*color: #0000FF; /*blue*/
 	left: 161px;
 }
-.rgb1, .rgb2, .rgb3{
+.rgb1, .rgb2, .rgb3, .rgb4{
 	/*position: absolute;*/
 	/*display: none;*/
 	/*top: 187px;*/
 	opacity: 0.0;
 	font-size: 20px;
-	z-index: -1;
+	z-index: -4;
 	/*overflow: hidden;*/
 }
 #r2{padding-left:0px; color: #00FFFF; }

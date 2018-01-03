@@ -61,6 +61,19 @@ var main = function() {
       $(".res_description").css("opacity","0.0");
     });
 
+  $("#hack")
+    .mouseenter(function(){
+      $(".rgb4").css("opacity","0.75");
+      $("#hack").css("opacity","0.0");
+      $(".hacker_description").css("opacity","0.5");
+
+    })
+    .mouseleave(function(){
+      $(".rgb4").css("opacity","0.0");
+      $("#hack").css("opacity","1");
+      $(".hacker_description").css("opacity","0.0");
+    });
+
   // $("span").click(function(){
   //   if(menu_mouseleave_enabled){
   //     if($(".browse").not(":visible")){
