@@ -7,33 +7,86 @@
 .menu {
 	font-size: 30px;
 	overflow: hidden;
+	/*font-family: "Times";*/
 }
 #name{
-	cursor: pointer;
+	/*cursor: pointer;*/
+	font-family: Times, serif;
 }
-.browse {
-	left: 300px;
-	top: 187px;
+
+.browse, .rgb2 {
+	padding-left: 2px;
+	padding-top: 100px;
 	position: fixed;
-	color: #707070;
-	display: none;
+	/*color: #707070;*/
+	/*display: block;*/
 	font-size: 20px;
+	z-index: 1;
+	/*font-family: "Arial";*/
 	/*border-bottom: 1px solid;
 	border-bottom-color: #CFCFCF;*/
 }
-#music{
+.CV, .rgb1{
+	padding-left: 2px;
+	padding-top: 50px;
+	position: fixed;
+	/*color: #707070;*/
+	/*display: block;*/
+	font-size: 20px;
+	z-index: 2;
+	/*font-family: "Arial";*/
+	/*border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;*/
+}
+.res_description{
+	padding-left: 220px;
+	padding-top: 50px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -99;
+	opacity: 0.0;
+}
+.music_description{
+	padding-left: 220px;
+	padding-top: 100px;
+	position:fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -100;
+	/*display: none;*/
+	opacity: 0.0;
+}
+.tumblr_description{
+	/*padding-left: 110px;*/
+	padding-left: 220px;
+	padding-top: 150px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -101;
+	opacity: 0.0;
+}
+.tumblr, .rgb3{
+	padding-left: 2px;
+	padding-top: 150px;
+	position: fixed;
+	font-size: 20px;
+}
+#res, #music, #blog{
 	color: black;
 	cursor: pointer;
 	text-decoration: none;
-	/*border-bottom: 1px solid;*/
-	/*border-bottom-color: #CFCFCF;*/
+	z-index: -1;
+	/*border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;*/
 }
-#more{
+/*#more{
 	padding-left: 50px;
-	/*border-bottom: 1px solid;*/
-	/*border-bottom-color: #CFCFCF;*/
-}
-.rgb{
+	border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;
+}*/
+/*.rgb{
 	position: absolute;
 	display: none;
 	top: 178px;
@@ -41,7 +94,7 @@
 	font-size: 30px;
 	z-index: -1;
 	overflow: hidden;
-}
+}*/
 #r {
 	color: #00FFFF; /*cyan*/
 	/*color: #FF0000; /*red*/
@@ -57,16 +110,16 @@
 	/*color: #0000FF; /*blue*/
 	left: 161px;
 }
-.rgb2{
-	position: absolute;
-	display: none;
-	top: 187px;
-	opacity: 0.5;
+.rgb1, .rgb2, .rgb3{
+	/*position: absolute;*/
+	/*display: none;*/
+	/*top: 187px;*/
+	opacity: 0.0;
 	font-size: 20px;
 	z-index: -1;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
-#r2{left:372px; color: #00FFFF; }
-#g2{left:375px; color: #FF00FF; }
-#b2{left:378px; color: #FFFF00; }
+#r2{padding-left:0px; color: #00FFFF; }
+#g2{padding-left:2px; color: #FF00FF; }
+#b2{padding-left:4px; color: #FFFF00; }
 
