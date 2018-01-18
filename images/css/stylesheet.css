@@ -1,7 +1,12 @@
 
+div {
+	display: inline-block;
+}
+
 .menuPad{
 	padding-left: 150px;
-	padding-top: 170px;
+	padding-top: 130px;
+	/*padding-right: 50%;*/
 	overflow: hidden;
 }
 .menu {
@@ -40,17 +45,24 @@
 }
 .tumblr, .rgb3{
 	padding-left: 2px;
-	padding-top: 150px;
-	position: fixed;
-	font-size: 20px;
-	z-index: 0;
-}
-.hacker, .rgb4{
-	padding-left: 2px;
 	padding-top: 200px;
 	position: fixed;
 	font-size: 20px;
 	z-index: -1;
+}
+.hacker, .rgb4{
+	padding-left: 2px;
+	padding-top: 250px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -2;
+}
+.mind, .rgb5{
+	padding-left: 2px;
+	padding-top: 150px;
+	position: fixed;
+	font-size: 20px;
+	z-index: 0;
 }
 .res_description{
 	padding-left: 220px;
@@ -74,7 +86,7 @@
 .tumblr_description{
 	/*padding-left: 110px;*/
 	padding-left: 220px;
-	padding-top: 150px;
+	padding-top: 200px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
@@ -84,14 +96,24 @@
 .hacker_description{
 	/*padding-left: 110px;*/
 	padding-left: 220px;
-	padding-top: 200px;
+	padding-top: 250px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
 	z-index: -102;
 	opacity: 0.0;
 }
-#res, #music, #blog, #hack{
+.mind_description{
+	/*padding-left: 110px;*/
+	padding-left: 220px;
+	padding-top: 150px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -102;
+	opacity: 0.0;
+}
+#res, #music, #blog, #hack, #mind, #report{
 	color: black;
 	cursor: pointer;
 	text-decoration: none;
@@ -128,7 +150,7 @@
 	/*color: #0000FF; /*blue*/
 	left: 161px;
 }
-.rgb1, .rgb2, .rgb3, .rgb4{
+.rgb1, .rgb2, .rgb3, .rgb4, .rgb5, .rgb6{
 	/*position: absolute;*/
 	/*display: none;*/
 	/*top: 187px;*/
@@ -140,4 +162,60 @@
 #r2{padding-left:0px; color: #00FFFF; }
 #g2{padding-left:2px; color: #FF00FF; }
 #b2{padding-left:4px; color: #FFFF00; }
+
+p {
+	font-size: 0;
+	display: inline;
+}
+
+.mind_prompt{
+	padding-left: 350px;
+	/*padding-right: 50px;*/
+	padding-top: 85px;
+	white-space: pre-wrap;
+	font-size: 18px;
+	position: absolute;
+	display: none;
+}
+span.prompt{
+	display: inline-block;
+	width: 51%;
+	font-size: 0;
+}
+span a {
+	font-size: 18px;
+	line-height: 24px;
+	/*width: 50%;*/
+}
+span#align-right {
+	/*position: relative;*/
+	/*padding-left: 220px;*/
+	text-align: right;
+	/*font-size: 20px;*/
+	/*line-height: 5px;*/
+	/*padding-top: 1200px;*/
+}
+.report, .rgb6 {
+	padding-top: 565px;
+	padding-left: 650px;
+	position: absolute;
+	font-size: 20px;
+	font-style: italic;
+	display: none;
+}
+.report{
+	font-style: italic;
+}
+#r3{padding-left:648px; color: #00FFFF; }
+#g3{padding-left:650px; color: #FF00FF; }
+#b3{padding-left:652px; color: #FFFF00; }
+/*#report {
+	font-size: 20px;
+}*/
+
+/*span a {*/
+	/*font-size: 18px;*/
+	/*line-height: 24px;*/
+	/*width: 50%;*/
+/*}*/
 

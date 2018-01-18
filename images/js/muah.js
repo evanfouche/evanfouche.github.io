@@ -1,3 +1,8 @@
+function hideReport(){
+  $(".mind_prompt").css("display","none");
+  $(".report, .rgb6").css("display","none");
+}
+
 var main = function() {
 
   var menu_mouseleave_enabled = true;
@@ -22,11 +27,17 @@ var main = function() {
   //     $("#name").css("opacity","1");
   //   });
 
+  // var 
+  // $(".rgb6").css
+
+  
+
   $("#music")
     .mouseenter(function(){
       $(".rgb2").css("opacity","0.75");
       $("#music").css("opacity","0.0");
       $(".music_description").css("opacity","0.5");
+      hideReport();
       // $(".music_description").css("display","inline");
     })
     .mouseleave(function(){
@@ -40,7 +51,8 @@ var main = function() {
       $(".rgb3").css("opacity","0.75");
       $("#blog").css("opacity","0.0");
       $(".tumblr_description").css("opacity","0.5");
-
+      hideReport();
+      
     })
     .mouseleave(function(){
       $(".rgb3").css("opacity","0.0");
@@ -53,7 +65,8 @@ var main = function() {
       $(".rgb1").css("opacity","0.75");
       $("#res").css("opacity","0.0");
       $(".res_description").css("opacity","0.5");
-
+      hideReport();
+      
     })
     .mouseleave(function(){
       $(".rgb1").css("opacity","0.0");
@@ -66,12 +79,45 @@ var main = function() {
       $(".rgb4").css("opacity","0.75");
       $("#hack").css("opacity","0.0");
       $(".hacker_description").css("opacity","0.5");
-
+      hideReport();
+      
     })
     .mouseleave(function(){
       $(".rgb4").css("opacity","0.0");
       $("#hack").css("opacity","1");
       $(".hacker_description").css("opacity","0.0");
+    });
+
+  $("#mind")
+    .mouseenter(function(){
+      $(".rgb5").css("opacity","0.75");
+      $("#mind").css("opacity","0.0");
+      $(".mind_description").css("opacity","0.5");
+
+    })
+    .mouseleave(function(){
+      $(".rgb5").css("opacity","0.0");
+      $("#mind").css("opacity","1");
+      $(".mind_description").css("opacity","0.0");
+    })
+    .click(function(){
+      $(".mind_prompt").css("display","inline-block");
+      $(".report, .rgb6").css("display","inline-block");
+      // $("#mind").css("opacity","1");
+      // $(".mind_description").css("opacity","0.0");
+    });
+
+  $("#report")
+    .mouseenter(function(){
+      $(".rgb6").css("opacity","0.75");
+      $("#report").css("opacity","0.0");
+      // $(".mind_description").css("opacity","0.5");
+
+    })
+    .mouseleave(function(){
+      $(".rgb6").css("opacity","0.0");
+      $("#report").css("opacity","1");
+      // $(".mind_description").css("opacity","0.0");
     });
 
   // $("span").click(function(){
