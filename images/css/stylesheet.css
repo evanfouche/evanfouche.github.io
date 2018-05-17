@@ -19,21 +19,9 @@ div {
 	font-family: Times, serif;
 }
 
-.browse, .rgb2 {
-	padding-left: 2px;
-	padding-top: 100px;
-	position: fixed;
-	/*color: #707070;*/
-	/*display: block;*/
-	font-size: 20px;
-	z-index: 1;
-	/*font-family: "Arial";*/
-	/*border-bottom: 1px solid;
-	border-bottom-color: #CFCFCF;*/
-}
 .CV, .rgb1{
 	padding-left: 2px;
-	padding-top: 50px;
+	padding-top: 40px;
 	position: fixed;
 	/*color: #707070;*/
 	/*display: block;*/
@@ -43,37 +31,57 @@ div {
 	/*border-bottom: 1px solid;
 	border-bottom-color: #CFCFCF;*/
 }
-.tumblr, .rgb3{
+.browse, .rgb2 {
 	padding-left: 2px;
-	padding-top: 250px;
+	padding-top: 80px;
 	position: fixed;
+	/*color: #707070;*/
+	/*display: block;*/
 	font-size: 20px;
-	z-index: -2;
-}
-.hacker, .rgb4{
-	padding-left: 2px;
-	padding-top: 300px;
-	position: fixed;
-	font-size: 20px;
-	z-index: -3;
+	z-index: 1;
+	/*font-family: "Arial";*/
+	/*border-bottom: 1px solid;
+	border-bottom-color: #CFCFCF;*/
 }
 .mind, .rgb5{
 	padding-left: 2px;
-	padding-top: 150px;
+	padding-top: 120px;
 	position: fixed;
 	font-size: 20px;
 	z-index: 0;
 }
 .insta, .rgb7{
 	padding-left: 2px;
-	padding-top: 200px;
+	padding-top: 160px;
 	position: fixed;
 	font-size: 20px;
 	z-index: -1;
 }
+.tumblr, .rgb3{
+	padding-left: 2px;
+	padding-top: 200px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -2;
+}
+.YT, .rgb8{
+	padding-left: 2px;
+	padding-top: 240px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -3;
+}
+.hacker, .rgb4{
+	padding-left: 2px;
+	padding-top: 280px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -4;
+}
+
 .res_description{
-	padding-left: 220px;
-	padding-top: 50px;
+	padding-left: 240px;
+	padding-top: 40px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
@@ -81,8 +89,8 @@ div {
 	opacity: 0.0;
 }
 .music_description{
-	padding-left: 220px;
-	padding-top: 100px;
+	padding-left: 240px;
+	padding-top: 80px;
 	position:fixed;
 	font-size: 20px;
 	font-style: italic;
@@ -90,30 +98,10 @@ div {
 	/*display: none;*/
 	opacity: 0.0;
 }
-.tumblr_description{
-	/*padding-left: 110px;*/
-	padding-left: 220px;
-	padding-top: 250px;
-	position: fixed;
-	font-size: 20px;
-	font-style: italic;
-	z-index: -103;
-	opacity: 0.0;
-}
-.hacker_description{
-	/*padding-left: 110px;*/
-	padding-left: 220px;
-	padding-top: 300px;
-	position: fixed;
-	font-size: 20px;
-	font-style: italic;
-	z-index: -104;
-	opacity: 0.0;
-}
 .mind_description{
 	/*padding-left: 110px;*/
-	padding-left: 220px;
-	padding-top: 150px;
+	padding-left: 240px;
+	padding-top: 120px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
@@ -122,19 +110,51 @@ div {
 }
 .insta_description{
 	/*padding-left: 110px;*/
-	padding-left: 220px;
-	padding-top: 200px;
+	padding-left: 240px;
+	padding-top: 160px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
 	z-index: -102;
 	opacity: 0.0;
 }
-#res, #music, #blog, #hack, #mind, #report, #art{
+.tumblr_description{
+	/*padding-left: 110px;*/
+	padding-left: 240px;
+	padding-top: 200px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -103;
+	opacity: 0.0;
+}
+.YT_description{
+	/*padding-left: 110px;*/
+	padding-left: 240px;
+	padding-top: 240px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -104;
+	opacity: 0.0;
+}
+.hacker_description{
+	/*padding-left: 110px;*/
+	padding-left: 240px;
+	padding-top: 280px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
+	z-index: -105;
+	opacity: 0.0;
+}
+
+#res, #music, #blog, #hack, #mind, #report, #art, #asmr, #asmr_link{
 	color: black;
 	cursor: pointer;
 	text-decoration: none;
-	z-index: -2;
+	z-index: -6;
+	position: fixed;
 	/*border-bottom: 1px solid;
 	border-bottom-color: #CFCFCF;*/
 }
@@ -152,28 +172,29 @@ div {
 	z-index: -1;
 	overflow: hidden;
 }*/
-#r {
-	color: #00FFFF; /*cyan*/
+
+/*#r {*/
+	/*color: #00FFFF; /*cyan*/
 	/*color: #FF0000; /*red*/
-	left: 155px;
-}
-#g {
-	color: #FF00FF; /*magenta*/
+	/*left: 155px;*/
+/*}*/
+/*#g {*/
+	/*color: #FF00FF; /*magenta*/
 	/*color: #00FF00; /*green*/
-	left: 158px;
-}
-#b {
-	color: #FFFF00; /*yellow*/
+	/*left: 158px;*/
+/*}*/
+/*#b {*/
+	/*color: #FFFF00; /*yellow*/
 	/*color: #0000FF; /*blue*/
-	left: 161px;
-}
-.rgb1, .rgb2, .rgb3, .rgb4, .rgb5, .rgb6, .rgb7{
+	/*left: 161px;*/
+/*}*/
+.rgb1, .rgb2, .rgb3, .rgb4, .rgb5, .rgb6, .rgb7, .rgb8, .rgb9{
 	/*position: absolute;*/
 	/*display: none;*/
 	/*top: 187px;*/
 	opacity: 0.0;
 	font-size: 20px;
-	z-index: -4;
+	z-index: -10;
 	/*overflow: hidden;*/
 }
 #r2{padding-left:0px; color: #00FFFF; }
@@ -186,15 +207,31 @@ p {
 }
 
 .mind_prompt{
-	padding-left: 350px;
+	padding-left: 360px;
 	/*padding-right: 50px;*/
 	padding-top: 85px;
 	white-space: pre-wrap;
 	font-size: 18px;
-	position: absolute;
+	position: fixed;
 	display: none;
+	z-index: -200;
 }
-span.prompt{
+.asmr_desc{
+	padding-left: 360px;
+	/*padding-right: 50px;*/
+	padding-top: 85px;
+	white-space: pre-wrap;
+	font-size: 18px;
+	position: fixed;
+	display: none;
+	z-index: -200;
+}
+span.report_prompt{
+	display: inline-block;
+	width: 51%;
+	font-size: 0;
+}
+span.asmr_prompt{
 	display: inline-block;
 	width: 51%;
 	font-size: 0;
@@ -215,17 +252,33 @@ span#align-right {
 .report, .rgb6 {
 	padding-top: 565px;
 	padding-left: 650px;
-	position: absolute;
+	position: fixed;
 	font-size: 20px;
 	font-style: italic;
 	display: none;
+	/*z-index: 5;*/
 }
-.report{
+.YT_link, .rgb9 {
+	padding-top: 515px;
+	padding-left: 700px;
+	position: fixed;
+	font-size: 20px;
 	font-style: italic;
+	display: none;
+	/*z-index: 5;*/
 }
-#r3{padding-left:648px; color: #00FFFF; }
-#g3{padding-left:650px; color: #FF00FF; }
-#b3{padding-left:652px; color: #FFFF00; }
+/*#report{
+	font-style: italic;
+	z-index: -200;
+}*/
+.rgb6#r3{padding-left:648px; color: #00FFFF; }
+.rgb6#g3{padding-left:650px; color: #FF00FF; }
+.rgb6#b3{padding-left:652px; color: #FFFF00; }
+
+.rgb9#r3{padding-left:698px; color: #00FFFF; }
+.rgb9#g3{padding-left:700px; color: #FF00FF; }
+.rgb9#b3{padding-left:702px; color: #FFFF00; }
+
 /*#report {
 	font-size: 20px;
 }*/
