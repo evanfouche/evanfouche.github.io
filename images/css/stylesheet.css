@@ -45,17 +45,17 @@ div {
 }
 .tumblr, .rgb3{
 	padding-left: 2px;
-	padding-top: 200px;
-	position: fixed;
-	font-size: 20px;
-	z-index: -1;
-}
-.hacker, .rgb4{
-	padding-left: 2px;
 	padding-top: 250px;
 	position: fixed;
 	font-size: 20px;
 	z-index: -2;
+}
+.hacker, .rgb4{
+	padding-left: 2px;
+	padding-top: 300px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -3;
 }
 .mind, .rgb5{
 	padding-left: 2px;
@@ -63,6 +63,13 @@ div {
 	position: fixed;
 	font-size: 20px;
 	z-index: 0;
+}
+.insta, .rgb7{
+	padding-left: 2px;
+	padding-top: 200px;
+	position: fixed;
+	font-size: 20px;
+	z-index: -1;
 }
 .res_description{
 	padding-left: 220px;
@@ -86,21 +93,21 @@ div {
 .tumblr_description{
 	/*padding-left: 110px;*/
 	padding-left: 220px;
-	padding-top: 200px;
+	padding-top: 250px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
-	z-index: -101;
+	z-index: -103;
 	opacity: 0.0;
 }
 .hacker_description{
 	/*padding-left: 110px;*/
 	padding-left: 220px;
-	padding-top: 250px;
+	padding-top: 300px;
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
-	z-index: -102;
+	z-index: -104;
 	opacity: 0.0;
 }
 .mind_description{
@@ -110,10 +117,20 @@ div {
 	position: fixed;
 	font-size: 20px;
 	font-style: italic;
+	z-index: -101;
+	opacity: 0.0;
+}
+.insta_description{
+	/*padding-left: 110px;*/
+	padding-left: 220px;
+	padding-top: 200px;
+	position: fixed;
+	font-size: 20px;
+	font-style: italic;
 	z-index: -102;
 	opacity: 0.0;
 }
-#res, #music, #blog, #hack, #mind, #report{
+#res, #music, #blog, #hack, #mind, #report, #art{
 	color: black;
 	cursor: pointer;
 	text-decoration: none;
@@ -150,7 +167,7 @@ div {
 	/*color: #0000FF; /*blue*/
 	left: 161px;
 }
-.rgb1, .rgb2, .rgb3, .rgb4, .rgb5, .rgb6{
+.rgb1, .rgb2, .rgb3, .rgb4, .rgb5, .rgb6, .rgb7{
 	/*position: absolute;*/
 	/*display: none;*/
 	/*top: 187px;*/

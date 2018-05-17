@@ -107,6 +107,20 @@ var main = function() {
       // $(".mind_description").css("opacity","0.0");
     });
 
+  $("#art")
+    .mouseenter(function(){
+      $(".rgb7").css("opacity","0.75");
+      $("#art").css("opacity","0.0");
+      $(".insta_description").css("opacity","0.5");
+      hideReport();
+
+    })
+    .mouseleave(function(){
+      $(".rgb7").css("opacity","0.0");
+      $("#art").css("opacity","1");
+      $(".insta_description").css("opacity","0.0");
+    });
+
   $("#report")
     .mouseenter(function(){
       $(".rgb6").css("opacity","0.75");
