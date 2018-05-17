@@ -1,15 +1,37 @@
 function hideReport(){
   $(".mind_prompt").css("display","none");
   $(".report, .rgb6").css("display","none");
+  // mind_mouseleave_enabled=true;
+  // $("#mind").mouseleave();
 }
 function hideASMR(){
   $(".asmr_desc").css("display","none");
   $(".YT_link, .rgb9").css("display","none");
 }
+function hideSC(){
+  $(".sc_desc").css("display","none");
+  $(".SC_link, .rgb11").css("display","none");
+}
 
 var main = function() {
 
   var menu_mouseleave_enabled = true;
+  var mind_mouseleave_enabled = true;
+  var yt_mouseleave_enabled = true;
+  var sc_mouseleave_enabled = true;
+
+  function resetMind(){
+    mind_mouseleave_enabled = true;
+    $("#mind").mouseleave();
+  }
+  function resetYT(){
+    yt_mouseleave_enabled = true;
+    $("#asmr").mouseleave();
+  }
+  function resetSC(){
+    sc_mouseleave_enabled = true;
+    $("#soundc").mouseleave();
+  }
 
   // $("#name")
   //   .mouseenter(function(){
@@ -42,7 +64,11 @@ var main = function() {
       $("#music").css("opacity","0.0");
       $(".music_description").css("opacity","0.5");
       hideReport();
+      resetMind();
       hideASMR();
+      resetYT();
+      hideSC();
+      resetSC();
       // $(".music_description").css("display","inline");
     })
     .mouseleave(function(){
@@ -57,7 +83,11 @@ var main = function() {
       $("#blog").css("opacity","0.0");
       $(".tumblr_description").css("opacity","0.5");
       hideReport();
+      resetMind();
       hideASMR();
+      resetYT();
+      hideSC();
+      resetSC();
       
     })
     .mouseleave(function(){
@@ -72,7 +102,11 @@ var main = function() {
       $("#res").css("opacity","0.0");
       $(".res_description").css("opacity","0.5");
       hideReport();
+      resetMind();
       hideASMR();
+      resetYT();
+      hideSC();
+      resetSC();
       
     })
     .mouseleave(function(){
@@ -87,7 +121,11 @@ var main = function() {
       $("#hack").css("opacity","0.0");
       $(".hacker_description").css("opacity","0.5");
       hideReport();
+      resetMind();
       hideASMR();
+      resetYT();
+      hideSC();
+      resetSC();
       
     })
     .mouseleave(function(){
@@ -102,17 +140,23 @@ var main = function() {
       $("#mind").css("opacity","0.0");
       $(".mind_description").css("opacity","0.5");
       hideASMR();
+      resetYT();
+      hideSC();
+      resetSC();
 
     })
     .mouseleave(function(){
-      $(".rgb5").css("opacity","0.0");
-      $("#mind").css("opacity","1");
+      if(mind_mouseleave_enabled){
+        $(".rgb5").css("opacity","0.0");
+        $("#mind").css("opacity","1");
+      }
       $(".mind_description").css("opacity","0.0");
     })
     .click(function(){
       $(".mind_prompt").css("display","inline-block");
       $(".report, .rgb6").css("display","inline-block");
       $(".mind_description").css("opacity","0.0");
+      mind_mouseleave_enabled=false;
       // $("#mind").css("opacity","1");
       // $(".mind_description").css("opacity","0.0");
     });
@@ -123,7 +167,12 @@ var main = function() {
       $("#art").css("opacity","0.0");
       $(".insta_description").css("opacity","0.5");
       hideReport();
+      resetMind();
+      // $("#mind").mouseleave();
       hideASMR();
+      resetYT();
+      hideSC();
+      resetSC();
 
     })
     .mouseleave(function(){
@@ -138,17 +187,50 @@ var main = function() {
       $("#asmr").css("opacity","0.0");
       $(".YT_description").css("opacity","0.5");
       hideReport();
+      resetMind();
+      hideSC();
+      resetSC();
 
     })
     .mouseleave(function(){
-      $(".rgb8").css("opacity","0.0");
-      $("#asmr").css("opacity","1");
+      if(yt_mouseleave_enabled){
+        $(".rgb8").css("opacity","0.0");
+        $("#asmr").css("opacity","1");
+      }
       $(".YT_description").css("opacity","0.0");
     })
     .click(function(){
       $(".asmr_desc").css("display","inline-block");
       $(".YT_link, .rgb9").css("display","inline-block");
       $(".YT_description").css("opacity","0.0");
+      yt_mouseleave_enabled=false;
+      // $("#mind").css("opacity","1");
+      // $(".mind_description").css("opacity","0.0");
+    });
+
+  $("#soundc")
+    .mouseenter(function(){
+      $(".rgb10").css("opacity","0.75");
+      $("#soundc").css("opacity","0.0");
+      $(".SC_description").css("opacity","0.5");
+      hideReport();
+      resetMind();
+      hideASMR();
+      resetYT();
+
+    })
+    .mouseleave(function(){
+      if(sc_mouseleave_enabled){
+        $(".rgb10").css("opacity","0.0");
+        $("#soundc").css("opacity","1");
+      }
+      $(".SC_description").css("opacity","0.0");
+    })
+    .click(function(){
+      $(".sc_desc").css("display","inline-block");
+      $(".SC_link, .rgb11").css("display","inline-block");
+      $(".SC_description").css("opacity","0.0");
+      sc_mouseleave_enabled=false;
       // $("#mind").css("opacity","1");
       // $(".mind_description").css("opacity","0.0");
     });
@@ -176,6 +258,19 @@ var main = function() {
     .mouseleave(function(){
       $(".rgb9").css("opacity","0.0");
       $("#asmr_link").css("opacity","1");
+      // $(".mind_description").css("opacity","0.0");
+    });
+
+  $("#sc_link")
+    .mouseenter(function(){
+      $(".rgb11").css("opacity","0.75");
+      $("#sc_link").css("opacity","0.0");
+      // $(".mind_description").css("opacity","0.5");
+
+    })
+    .mouseleave(function(){
+      $(".rgb11").css("opacity","0.0");
+      $("#sc_link").css("opacity","1");
       // $(".mind_description").css("opacity","0.0");
     });
 
